@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+    *{margin:0;padding:0;}
+    ul,li{list-style:none;}
+    .slide{height:150px;overflow:hidden;}
+    .slide ul{height:100%;}
+    .slide div{height:100%;}
+    .slide div:nth-child(1){background:#faa; background-image:url(https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415__340.jpg) ;}
+    .slide div:nth-child(2){background:#afa; background-image:url(https://cdn.pixabay.com/photo/2014/08/11/11/06/paris-415476__340.jpg) ;}
+    .slide div:nth-child(3){background:#aaf;background-image:url(https://cdn.pixabay.com/photo/2019/03/15/10/32/paris-4056742__340.jpg) ;}
+    .slide div:nth-child(4){background:#faf; background-image:url(https://cdn.pixabay.com/photo/2019/05/26/18/27/amsterdam-4230946__340.jpg) ;}
+  </style>
+
+  </head>
+  <body>
+  <div class="slide">
+    <ul>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </ul>
+  </div>
+
+  <script>
+    const all = ele => document.querySelectorAll(ele)
+    const one = ele => document.querySelector(ele)
+    const slide = _ => {
+      const wrap = one('.slide')
+      const target = wrap.children[0]
+      const len = target.children.length
+      const liStyle = `
+        position:absolute;
+        left:0;right:0;top:0;bottom:0;transition:1s;opacity:0
+      `
+      target.style.cssText = `position:relative;`
+      Array.from(target.children)
+      .forEach(ele => ele.style.cssText = liStyle)
+      target.children[0].style.opacity = 1
+      let pos = 0
+      setInterval(_ => {
+        target.children[pos].style.opacity = 0
+        pos = (pos + 1) % len 
+        target.children[pos].style.opacity = 1
+      }, 5000)
+    }
+    window.onload = function () {
+      slide()
+    }
+    </script>
+  </body>
+  </html>
