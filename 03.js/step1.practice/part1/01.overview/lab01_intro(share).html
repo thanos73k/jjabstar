@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <style>
+        div {
+            background-color: brown;
+            color: white;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 기본 기능</h1>
+
+    <h3>HTML 내용 변경</h3>
+    <div id="ex1">before</div>
+    <!-- document.getElementById('아이디명').innerhtml='바꾸고자 하는 내용' -->
+    <!-- JavaScript는 ""(큰따옴표)와 ''(작은따옴표) 혼용해서 사용 -->
+    <button onclick="document.getElementById('ex1').innerHTML='after'"> 내용변경 </button>
+
+    <button onclick="document.getElementById('ex1').innerHTML='before'"> 원상복구  </button>
+    <hr>
+
+    <h3>HTML 속성 변경</h3>
+    <div id="ex2">TEST</div>
+    <button onclick="document.getElementById('ex2').classList.add('bold')">굵어짐</button>    
+
+    <button onclick="document.getElementById('ex2').classList.add('italic')">기울기</button>    
+
+    <button onclick="document.getElementById('ex2').classList.remove('italic', 'bold')">다 제거</button>    
+
+   
+
+    <h3>HTML 스타일 변경</h3>
+    <div id="ex3">TEST</div>
+
+    <button onclick="document.getElementById('ex3').style.visibility='hidden'">안 보이게 </button>
+
+    <button onclick="document.getElementById('ex3').style.visibility='visible'">보이게 </button>
+
+    <button onclick="document.getElementById('ex3').style.display='none'">없어지게 </button>
+    <hr>
+</body>
+</html>

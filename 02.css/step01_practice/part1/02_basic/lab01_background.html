@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css 색상 및 배경</title>
+    <style>
+        .bgimg{
+            background-image: url(https://cdn.pixabay.com/photo/2020/01/14/11/00/nubian-ibex-4764738__340.jpg);
+            width: 400px;
+            height: 600px;
+
+            background-repeat: no-repeat;
+
+        }
+
+        .bgpos{
+            background-color: red;
+            background-image: url(https://cdn.pixabay.com/photo/2019/11/05/16/03/man-4603859__340.jpg);
+            width: 400px;
+            height: 600px;
+
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        .bgat{
+            background-image: url(https://cdn.pixabay.com/photo/2012/04/24/17/38/warning-40593__340.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed;
+
+        }
+
+        .bgsh{
+            background: skyblue fixed top right no-repeat url(https://cdn.pixabay.com/photo/2019/12/14/07/21/mountain-4694346__340.png) ;
+            width: 800px;
+            height: 800px;
+        }
+
+        .bgsize{
+            height: 240px;
+            background-image: url(https://cdn.pixabay.com/photo/2020/01/15/07/41/hamburg-4767149__340.jpg);
+            /* contain 은 모든 이미지가 보ㄹ일 수 있게 가장 짧은 면은 기준으로 사이즈 변경 */
+            background-size: 10% 50%; 
+
+        }
+
+        .bggradient{
+            height: 500px;
+            background-image: linear-gradient(
+                to top right, 
+                #00085b 0%,
+                #389da2 33%,
+                #75c3bc 66%,
+                #f6f1c7 100%
+            );
+
+
+        }
+
+        .bginstar{
+            height: 500px;
+            background-image: linear-gradient(
+                45deg,
+
+                #00085b 0%,
+                #ff0d02 33%,
+                #75c3bc 66%,
+                #f6f1c7 100%
+
+            );
+
+        }
+    </style>
+</head>
+<body>
+    <h1>색상</h1>
+0
+    <p style="color: red;">빨간색</p>
+    <p style="color: rgb(255, 255, 0);">빨간색(rgb)</p>
+    <p style="color: #ff0000;">빨간색(hex)</p>
+    <p style="color: #3b3b1c;">1(hex)</p>
+
+    <br><br>
+
+    <h1>배경</h1>
+
+    <div style="background-color: lightgray;">배경색 지정입니다</div>
+    <div style="background-color: rgb(255, 255, 0);">배경색 지정입니다2</div>
+
+    <h2>배경 이미지</h2>
+
+    <div class="bgimg" >
+        배경이미지</div>
+
+    <br><br>
+
+    <h2>배경 포지션</h2>
+
+    <div class="bgpos">배경 위치 설정</div>
+
+    <br><br>
+
+    <h2>배경 고정</h2>
+    
+    <div class="bgat">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus delectus recusandae unde at voluptas, accusantium iste facilis perspiciatis quam, nisi eum eos aliquam numquam nam ullam temporibus ex, cum animi?
+        Perspiciatis, dolor illo quos eos quasi molestias doloremque veritatis delectus inventore porro tempora, aliquam excepturi laborum eveniet! Ullam hic dignissimos quis ratione adipisci aut dolore sapiente? Iste nobis debitis molestias?
+        Unde delectus nesciunt consequatur consectetur quasi? Velit quaerat repudiandae, eaque libero sunt tempore error maiores vitae quibusdam doloremque, porro sit accusantium corporis minima incidunt odit consequatur in ab dolore perspiciatis!
+        Dolorum, natus recusandae ad tempora modi architecto perspiciatis atque, animi, ab placeat tenetur impedit ea in amet similique delectus magnam fugit! Animi magnam doloribus illo reprehenderit expedita eligendi eos culpa?
+        Provident quod fugiat molestias libero aliquid corporis nostrum vero labore. Cumque et quo reprehenderit culpa, architecto similique. Odio ex, facere quos repudiandae sit at, et aperiam facilis minima aut tempora!
+        Unde necessitatibus qui placeat architecto sequi reiciendis nemo! Voluptatem, tempora fuga repellat explicabo nam illo id placeat corrupti molestias inventore. Vero facere eum optio aperiam distinctio magnam, incidunt atque impedit.
+        Totam consectetur iste minus doloribus amet itaque facilis architecto commodi odit cum quisquam, quasi velit cupiditate aperiam praesentium blanditiis mollitia earum suscipit vero debitis delectus saepe! Perspiciatis architecto illum nemo?
+        Adipisci alias mollitia minima numquam tempore inventore porro suscipit voluptates dolore minus saepe dolores praesentium velit accusamus perferendis repudiandae in, similique quidem dignissimos rem error doloribus, facilis laborum quisquam. Harum.
+        Libero a reiciendis tempora, officia porro aspernatur aut dolor labore excepturi ullam quae magni, illum, dolorum aliquid quam nemo fugit quis repellendus commodi laudantium accusamus laboriosam velit. Numquam, quam. Sequi?
+        Pariatur nulla enim saepe laudantium esse animi doloribus tempore ipsam voluptas repellat qui harum facere quaerat voluptatem, nihil repudiandae quisquam, quas assumenda est fugit maiores at aspernatur mollitia. Beatae, ea!
+        Error numquam quasi fuga dicta mollitia adipisci dolorem quidem sit consectetur. Sed quasi voluptates nulla dolorem est ab provident illo sapiente cupiditate culpa! At maiores ipsam optio, officiis quo corrupti.
+        Temporibus libero quasi non! Ipsa possimus vel expedita magnam, ipsam hic repellat minus maiores voluptatem dolores cum deserunt quisquam voluptates magni vitae similique quasi tenetur doloremque reiciendis, quia fugit tempore?
+        Ratione eius est aut ex fugiat facilis temporibus repellat expedita maiores! Mollitia voluptate similique sit? Odit consequatur dolorem animi labore recusandae. Omnis sunt cupiditate aut necessitatibus perspiciatis suscipit nobis asperiores.
+        Doloremque hic veniam repellendus et minus, eius adipisci quibusdam omnis nam consectetur? Est quod nostrum cumque voluptatum, tenetur illo beatae vero dolor ut asperiores laboriosam rerum sequi veritatis ab doloribus.
+        Esse, placeat? Obcaecati dolore sunt sequi quo blanditiis, nobis laboriosam atque voluptatum non ea. At repellendus esse nesciunt fuga, temporibus fugiat ratione soluta reiciendis adipisci, minima vero recusandae fugit. Vero.
+        Mollitia tenetur, sunt suscipit expedita veritatis provident, omnis dolorum voluptates labore deserunt iure reprehenderit, recusandae dignissimos ad eius magni quidem similique laudantium culpa. Magni necessitatibus repellendus culpa tempore unde recusandae!
+        Vero voluptatibus possimus expedita itaque. Aliquid quae fuga laborum suscipit vero dolor enim consequatur hic? Asperiores, dolore? Doloremque eveniet aspernatur eos officiis hic autem molestiae impedit saepe, voluptatum exercitationem similique.
+        Odit laudantium fugit porro dignissimos dolores vel quibusdam eveniet nesciunt, repudiandae tempore, nam, quasi explicabo eaque voluptas officiis repellat possimus quo delectus maiores unde. Rerum consequatur eius distinctio alias saepe?
+        Libero mollitia a consectetur delectus, nemo architecto ipsum ad molestiae? In, quia. Omnis officia id aspernatur amet, quia provident porro, dolor eum error sunt iure aperiam, et ullam facilis delectus.
+        Culpa nostrum ut temporibus eaque. Illum, non. Voluptates soluta ratione ipsam sint itaque sunt deserunt, dignissimos, dolorem culpa consequatur minus eos at obcaecati sed eius nobis blanditiis asperiores suscipit cumque.
+        Voluptas, placeat! Vitae unde, voluptates dolorum iusto porro voluptatem, quae perferendis inventore soluta nemo fugiat quos nostrum delectus laborum beatae voluptas asperiores et eius eligendi repellat eveniet. Minus, perspiciatis similique?
+        Nemo dolor odio qui cum, nesciunt debitis itaque eaque! Explicabo quae beatae expedita est libero fugit quia laborum autem mollitia, tenetur quidem quaerat repellendus consequuntur a et quam aspernatur provident.
+        Numquam repellat iure doloremque laborum delectus cupiditate distinctio saepe porro quasi aspernatur! Accusantium illo nostrum vero sint quam dicta minus ut, libero aliquid! Magnam eaque sunt quas dicta ea explicabo.
+        Aut id, alias aliquid ex dicta saepe quam voluptatibus similique consequuntur, at magni aliquam exercitationem, repellendus facilis! Delectus rerum nemo aliquid, aut quis, fugiat nesciunt, suscipit veniam veritatis enim nulla.
+        Iusto dignissimos inventore cum quae recusandae tempora suscipit ab, ipsum minus vel quisquam? Debitis impedit, quibusdam ea tenetur inventore harum pariatur iusto corporis iste, dignissimos nam vero. Autem, ipsam excepturi.
+        Aut id quia maxime dolores necessitatibus officiis sapiente tempora voluptatem officia eum numquam explicabo omnis rerum, perspiciatis doloribus repellat minus aliquid, obcaecati soluta? Est quis voluptates ad. Quia, possimus nesciunt!
+        Maxime a iusto, cupiditate, est obcaecati esse amet assumenda aliquid cum ut quod voluptatem fuga, doloribus id similique dolores architecto non. In, vero dolorem explicabo aut perferendis voluptas excepturi animi?
+        Natus accusantium eius quibusdam consequatur expedita atque ratione, molestias mollitia soluta ad, vero eveniet corporis, ex in voluptates sunt incidunt! Voluptas at tempore sequi id distinctio exercitationem! Dolorem, consequuntur dolorum.
+        Eum facere necessitatibus voluptas aliquid deleniti a, veniam blanditiis fuga quisquam doloribus, nesciunt nobis maxime molestias ea, aut officia nisi vero corporis iure suscipit accusantium. Quis repellendus mollitia similique quisquam!
+        Accusamus, sed suscipit, rem corporis necessitatibus dignissimos error eaque eius impedit facilis, et provident inventore. Dolorum laudantium veniam praesentium voluptatum a, minus vel unde delectus. Est dicta culpa assumenda non?
+        Mollitia ex tempora alias eius perferendis quaerat deserunt voluptate fugit et culpa sapiente fuga, ratione, impedit, rerum ut! Debitis provident explicabo distinctio velit nihil voluptatem facilis quasi molestias aliquam rerum?
+        Blanditiis delectus modi sed beatae excepturi cupiditate pariatur odio voluptatum quo. Tempore delectus repellendus adipisci, veniam, suscipit odit voluptatum autem, labore nisi eos nam illo voluptates! Nostrum iure dolores cupiditate.
+        Temporibus error corporis reiciendis sequi tempora. Reprehenderit voluptatibus, laborum aliquid ipsum perspiciatis accusamus praesentium quisquam corporis sint, doloribus quaerat placeat, explicabo repellendus architecto? Modi dicta incidunt quis, magni sunt voluptatibus.
+        Iste suscipit sit ipsam, distinctio consequuntur aliquam magni et quis eveniet vero nostrum quisquam cumque nemo temporibus voluptates dolorum saepe. Sit modi eligendi voluptatum eum quo minima neque maxime hic!
+        Aliquam ipsam est aperiam earum eum, labore porro ea? Fugiat consequuntur nihil assumenda blanditiis modi iure harum inventore illum sunt. Quae, est! Saepe, dignissimos. Eius omnis adipisci tenetur suscipit fuga?
+        Nam cupiditate dolore ut nobis, deserunt sed culpa dicta quibusdam voluptate placeat neque unde? Temporibus accusamus, ad cumque sequi earum nemo modi maiores voluptate enim quae reprehenderit blanditiis nulla molestiae.
+        Magni reprehenderit incidunt vero animi ipsa temporibus sit? Mollitia cumque libero sed fuga officia ad quidem? Perferendis, neque, nisi, at vero recusandae corrupti asperiores quod minima tempora atque quidem facilis?
+        Dolores totam maiores ullam optio quod culpa minima sunt mollitia corporis repellat? Modi obcaecati non, debitis architecto officiis eius odio animi est deserunt velit nesciunt sit ipsum omnis voluptas blanditiis.
+        Quos in tempore fuga accusamus facere. Eaque quos optio maiores nobis dignissimos, eligendi minima molestias nemo consequatur architecto maxime sit, mollitia officiis similique vel ipsum itaque! Omnis amet dicta ad.
+        Omnis aut aspernatur, dolore esse consectetur illo officia vero saepe labore, voluptatum ipsam rerum eligendi quaerat hic ipsa expedita eum eaque cum velit accusantium inventore commodi. Quaerat ea impedit magni?
+        Minima nulla quas excepturi dicta, quod error reprehenderit praesentium expedita a illum, vel aspernatur nisi facilis est officia sit ipsa commodi animi consequuntur? Rem aspernatur enim facilis expedita, suscipit totam?
+        Cum facilis molestias ipsum corrupti alias. Quas quo fuga veritatis illo est nisi error sequi molestias delectus sint commodi odio id dolorem ad qui consectetur, at ducimus quidem dolorum nesciunt.
+        Magnam voluptatem perspiciatis eligendi magni amet minus esse, ducimus enim sunt porro excepturi pariatur aut tenetur saepe sit fugiat possimus et facere rerum corporis facilis similique. Quo ipsum molestiae deleniti!
+        Rerum commodi alias accusamus quibusdam non sint saepe neque modi minima quisquam repellendus eum cum labore inventore voluptatem, quae, possimus nam magnam. Rerum aut perspiciatis quasi vitae aliquam consectetur odit!
+        Reiciendis animi fugiat delectus quod quae deserunt cupiditate atque dignissimos illo aut voluptate eveniet officiis vero quis, nisi quisquam ab esse natus ipsam. Iure delectus dolorem ducimus nemo fugiat quam?
+        Repudiandae, nemo sapiente deserunt modi temporibus optio voluptatem quidem nobis sint possimus dolores, iste distinctio facere iusto omnis eaque nesciunt. Beatae accusamus eligendi illum, ipsa nihil libero odio nesciunt earum.
+        Laudantium hic in quas est sit totam maiores fugit voluptatem dolorem, cumque qui consequatur, molestiae nemo dolores quia adipisci aperiam minus. Incidunt omnis repudiandae blanditiis. Maiores aliquid amet labore assumenda.
+        Quas enim maxime libero, obcaecati laborum sapiente sint odio voluptates pariatur ratione? Tenetur laborum, molestiae facilis, ea neque, assumenda obcaecati modi aliquam eius porro delectus! Magni, aut. Delectus, non suscipit.
+        Necessitatibus maxime aspernatur quas impedit soluta voluptates reprehenderit excepturi voluptatem quis quae. Odit, atque dolore dolorum et est a tempore! Dolorem explicabo sunt impedit laudantium. Aut illo dolore quisquam incidunt!
+        Debitis a, et est, perferendis deleniti voluptates beatae vel, minus sit cupiditate ex assumenda natus eos! Id assumenda, commodi sint nostrum sunt odit, vel ipsum ducimus, facere quod aliquam iure?
+    </div>
+
+    <h2>배경 축약</h2>
+    <div class="bgsh">축약 버전입니다</div>
+
+    <br>
+    <br>
+
+    <h2>배경 그림 사이즈 변경</h2>
+    <div class="bgsize">qwe</div>
+
+    <br><br>
+
+    <h2>배경 그라디언트</h2>
+    <div class="bggradient"></div>
+
+    <div class="bginstar"></div>
+</body>
+</html>

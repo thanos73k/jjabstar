@@ -1,0 +1,27 @@
+- 초기 설정
+git config --global user.name "유저 이름 혹은 아이디"
+git config --global user.email "github 가입 시 email"
+
+- 로컬 저장소로 위치 이동
+cd [로컬 저장소 위치]
+
+- 로컬 저장소에서 시작
+git init
+
+- 현재 상태
+git status
+
+- 원격 저장소로 업로드 준비
+git add [파일명]
+
+git status
+
+- 기록(스냅샷)
+git commit -m "메세지"
+
+- 로컬 & 원격 저장소 연동 상태 확인
+git remote add origin [git 주소]
+git remote -v
+
+- 로컬 저장소에서 원격 저장소로 업로드
+git push -u origin master

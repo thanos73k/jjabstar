@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>new shop</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -159,10 +159,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <img class="picturesize" src="https://cdn.pixabay.com/photo/2018/11/30/07/15/male-3847144__340.jpg" style="width:100%">
           <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-black" onclick="countPrice()">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        <p>Mega Ripped Jeans<br><b clss="selecteditem">$19.99</b></p>
       </div>
       <div class="w3-container ">
         <img class="picturesize" src="https://cdn.pixabay.com/photo/2019/09/09/14/55/fashion-4463804__340.jpg" style="width:100%">
@@ -180,17 +180,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <img class="picturesize" src="https://cdn.pixabay.com/photo/2017/12/28/05/54/people-3044482__340.jpg" style="width:100%">
           <span class="w3-tag w3-display-topleft">Sale</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-black" onclick="sum()">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div>
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+        <p >Vintage Skinny Jeans<br><b class="w3-text-red selecteditem>$14.99</b></p>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container ">
         <img src="https://cdn.pixabay.com/photo/2016/08/21/07/14/body-1609091__340.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+        <p clss="item">Vintage Skinny Jeans<br><b>$14.99</b></p>
       </div>
       <div class="w3-container ">
         <img src="https://cdn.pixabay.com/photo/2020/01/22/15/12/blue-4785541__340.jpg" style="width:100%">
@@ -297,7 +297,13 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
+
+function sum() {
+  const price = document.getElementById("selecteditem");
+  
+}
 </script>
+
 
 <script>
     const all = ele => document.querySelectorAll(ele)
