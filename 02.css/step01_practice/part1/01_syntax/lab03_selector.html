@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css Selector</title>
+
+    <style>
+        p{
+            background-color: blue;
+        }
+
+        #myId{
+            background-color: chartreuse;
+        }
+
+        .myClass{
+
+            text-align: center;
+
+            color: chartreuse;
+        }
+
+        div, span, #Pid, .newClass{
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자</h1>
+    <h2>태그 선택자</h2>
+
+    <p>p태그를 선택해봅시다 </p>
+    <p>p태그를 선택해봅시다 </p>
+    <p>p태그를 선택해봅시다 </p>
+
+    <br><hr><br>
+
+    <h2>아이디(id) 선택자</h2>
+    <p id="myId">아이디를 적용할 거에요</p>
+    <p>아이디를 없으면 원래대로 </p>
+
+    <br><br>
+
+    <h2>클래스 선택자</h2>
+    <h3>클래스를 적용 전입니다</h3>
+    <h3 class="myClass">클래스를 적용 후 입니다</h3>
+
+    <br><br>
+
+    <h2>그룹선택자</h2>
+
+    <div>div입니다</div>
+    <span>span입니다</span>
+    <p id="pId">id를 적용한 p</p>
+    <h4 class="newClass">class를 적용한 h4</h4>
+
+
+
+</body>
+</html>

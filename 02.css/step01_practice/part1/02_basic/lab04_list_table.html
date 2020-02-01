@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 리스트와 테이블</title>
+    <style>
+        ul{
+            background-color: yellow;
+            /*list-style-type: square;*/
+            /*list-style-image: url();*/
+            list-style-position: outside;
+        }
+
+        ol{
+            background-color: red;
+            list-style-type: upper-alpha;
+
+        }
+
+        table, td{
+            border: 1px solid black;
+            font-size:  30px;
+        }
+        table{
+            border-collapse: collapse;
+
+        }
+        td{
+            width: 50px;
+            height: 100px;
+
+        }
+
+        .bottom{
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 리스트</h1>
+    <h2>순서없는 리스트</h2>
+    <ul>
+
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        
+    </ul>
+    <br>
+    <h2>순서 있는 리스트</h2>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <br><br>
+
+    <h2>테이블</h2>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+
+    </table>
+</body>
+</html>

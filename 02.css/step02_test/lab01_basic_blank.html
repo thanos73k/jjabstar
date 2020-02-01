@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>플레이데이터 맛집 탐방</title>
+    <style>
+        /* 태그 선택자 */
+        body {
+            /*  https://image.flaticon.com/icons/svg/1046/1046806.svg 을 배경 이미지로 지정
+                배경 이미지 크기는 10%로
+                힌트 : background */
+
+                background-image: url(https://image.flaticon.com/icons/svg/1046/1046806.svg);
+
+                background-size: 10%;
+        }
+        table, td {
+            /*  1px의 solid, 검정색의 테두리 설정
+                힌트 : border */
+
+                border:  1px solid black;
+        }
+        table {
+            /*  테이블 테두리 겹치게 설정
+                너비 상위 요소의 95% 설정
+                힌트 : border-collapse */
+
+                border-collapse: collapse;
+                
+                width: 95%;
+        }
+        td {
+            /*  각 열의 최대 너비 180px, 높이 40px */
+            width: 180px; height: 40px;
+        }
+        td:hover {
+            /*  배경색 회색, 글자색 흰색 */
+            background-color: gray;
+            color: white;
+        }
+        td:active {
+            /*  배경색 검정색, 글자색 흰색 */
+            background-color: black;
+            color: white;
+        }
+        /* 부모요소>자식요소 : 앞 선택자 바로 아래에 속한 요소 지정 */
+        td>img {
+            /*  상위 요소의 100% */
+            /* ?????? */
+        }
+        h1 {
+            /*  샘플 이미지에 있는 색상 적용
+                텍스트 중앙 정렬
+                힌트 : text-align */
+                text-align: center;
+        }
+        a:visited {
+            /* visited는 색으로만 구분 가능 */
+            /* 글자색 흰색 */
+            color: white;
+        }
+        a {
+            /*  색상 초기화, 밑줄 초기화
+                힌트 : text-decoration */
+                text-decoration: none;
+        }
+        /* 선택자[요소명=요소값] : 요소가 특정값인 것들을 선택 */
+        input[type='text'] {
+            /* 너비 50% */
+            width: 50%;
+        }
+        input[type='text']:focus {
+            /* 배경색 토마토색, 글자색 흰색 */
+            background-color: tomato;
+            color: white;
+        }
+        /* ::placehoder = placeholder에 서식 적용해주는 가상 요소 선택자(::)*/
+        input[type='text']::placeholder {
+            /* 글자색 : royalblue */
+
+            color: royalblue;
+        }
+
+        /* 클래스 선택자 */
+        .center {
+            margin: auto;
+            /* 좌우 외부 여백을 똑같이 맞춰 중앙 정렬 시켜주는 설정 */
+        }
+        .bold {
+            /* 굵게 */
+        }
+        .vbottom{
+            /*  하단 정렬
+                힌트 : vertical-align */
+                vertical-align: bottom;
+        }
+        .f20{
+            /*  글자 크기 20px */
+            font-size: 20px;
+        }
+
+        /* 아이디 선택자 */
+        #wrap {
+            /*  1px solid grey의 테두리
+                너비는 상위 요소의 50%
+                최대 너비 960px, 최소 너비 720px
+                배경은 흰색 + https://image.flaticon.com/icons/svg/1533/1533908.svg를 배경 이미지로 + x축을 기준으로 반복
+                배경 이미지의 사이즈는 10%
+                */
+
+                border:  1px solid gray;
+                width: 50%;
+                max-width: 960px; min-width: 720px;
+                background-image: url(https://image.flaticon.com/icons/svg/1533/1533908.svg);
+                background-size: 10%;
+                background-color: white;
+
+                
+
+
+        }
+        #firstline{
+            /*  글자색 흰색
+                배경색은 linear-gradient를 사용하여 우상향 방향으로
+                #9d0b0b 0%, 
+                #da2d2d 33%,
+                #eb8242 66%,
+                #f6da63 100%
+                비율로 구현
+                */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="center">
+        <h1>플레이데이터 주변 맛집 소개</h1>
+        <table class="center">
+            <tr id="firstline" class="bold vbottom">
+                <td>이름</td>
+                <td>사진</td>
+                <td>주소</td>
+                <td>비고</td>
+            </tr>
+            <tr>
+                <td class="f20"><a href="https://store.naver.com/restaurants/detail?id=287394996" target="blank">맛손식당</a></td>
+                <td><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fldb.phinf.naver.net%2F20191202_300%2F1575289076628OKIhX_JPEG%2F8bB8oGHDulSIsoYr4xoT4g3c.jpg&type=f&size=780x288"
+                        alt="맛손식당"></td>
+                <td>서울 서초구 서초중앙로8길 85</td>
+                <td>카드 결제 X<br>계좌이체 가능</td>
+            </tr>
+            <tr>
+                <td class="f20"><a href="https://store.naver.com/restaurants/detail?id=11850739" target="blank">중국성</a></td>
+                <td><img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&src=http%3A%2F%2Fldb.phinf.naver.net%2F20150901_108%2F1441055336830jnc5k_JPEG%2F11850739_0.jpg&type=m862_636"
+                        alt="중국성"></td>
+                <td>서울 서초구 서초중앙로8길 136</td>
+                <td>전형적인 중국집</td>
+            </tr>
+        </table>
+        <br>
+        <!-- HTML 복습! 하단의 HTML 태그 속성 채워보기 -->
+        <form action="https://search.naver.com/search.naver?" method=" " target="blank">
+             맛집 입력 : <input type="text" name=" " placeholder="당신의 맛집을 입력해주세요">
+            <input type="submit" value="맛집 검색">
+        </form>
+        <br>
+    </div>
+</body>
+
+</html>
